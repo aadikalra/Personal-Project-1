@@ -149,7 +149,7 @@ input.addEventListener("keydown", function (event) {
       guessingGame.style.display = "none";
       randomColorPicker.style.display = "none";
       todoApp.style.display = "none";
-    }, 3000);
+    }, 6000);
   }
 })
 
