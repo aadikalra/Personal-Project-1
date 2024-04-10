@@ -2,7 +2,7 @@
 function hypotenuse(a, b) {
   let Hypotenuse = Math.pow(a, 2) + Math.pow(b, 2);
   Hypotenuse = Math.sqrt(Hypotenuse);
-  console.log(`C² is ${Hypotenuse}, and rounded to the nearest tenth it is ${Hypotenuse.toFixed(1)}`)
+  console.log(`C² is ${Hypotenuse}, and rounded to the nearest tenth it is ${Hypotenuse.toFixed(1)}. In radical form it is √${Hypotenuse*Hypotenuse}`)
 }
 // Function for calculating the Other Side of a triangle/B² when you have one side and the Hypotenuse
 function otherSide(a, c) {
