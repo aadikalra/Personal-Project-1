@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Template</title>
+    <link rel="stylesheet" href="Template.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Another Close Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,500,0,0"
+    />
+    <!-- Close Icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <!-- Search Icon-->
+  </head>
+  <body>
+    <header>
+      <h1 id="homepageh1">Test Website</h1>
+      <nav>
+        <ul>
+          <li><a id="signUpFormLi">Contact Form</a></li>
+          <li><a id="randomColorPickerLi">Random Color Picker</a></li>
+          <li><a id="guessingGameLi">Guessing Game</a></li>
+          <li>
+            <a></a>
+            <div class="dropdown">
+              <a> </a><a class="dropbtn">More...</a>
+              <div class="dropdown-content">
+                <a id="todoAppLi">Todo App</a>
+                <a id="simonGameLi">Simon Game</a>
+                <a id="RoundingAppLi">Rounding App</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--The Homepage for the Website  -->
+      <div id="homepage">
+        <section id="home" style="background-color: lightcyan">
+          <div class="container">
+            <h2>Welcome to Our Website</h2>
+            <p>
+              Welcome to our website! We hope you enjoy your time here and find
+              everything you're looking for. Please feel free to stay a while,
+              explore, and immerse yourself in all we have to offer. Your
+              enjoyment is our priority, so come and indulge in the experiences
+              we've crafted just for you.
+            </p>
+          </div>
+        </section>
+        <section id="about" style="background-color: lightsalmon">
+          <div class="container">
+            <h2>About Us</h2>
+            <p>
+              We're excited to have you join us on this adventure. Explore our
+              website to learn more about our story, our team, and how we're
+              making a difference. Thank you for being a part of our community.
+              We have many members you might like to meet!!
+            </p>
+          </div>
+        </section>
+        <section id="services" style="background-color: lightgoldenrodyellow">
+          <div class="container">
+            <h2>Our Games/Projects</h2>
+            <ul>
+              <li>Contact Form</li>
+              <li>Random Color Picker</li>
+              <li>Guessing Game</li>
+              <li>ToDo App</li>
+              <li>Simon Game</li>
+              <li>TBD</li>
+            </ul>
+          </div>
+        </section>
+        <section id="contact" style="background-color: lightgreen">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: 123-456-7890</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Sign Up Form -->
+      <div id="signUpForm" class="option">
+        <form id="myForm" action="#" method="post">
+          <h2>Contact Form</h2>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required=""
+            placeholder="Enter your full name"
+          />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required=""
+            placeholder="your_email@example.com"
+          />
+          <br />
+          <label>Subscribe to Newsletter:</label>
+          <br />
+          <div
+            id="radios"
+            style="
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+              align-content: space-between;
+              justify-content: space-around;
+              align-items: baseline;
+            "
+          >
+            <span>
+              <input type="radio" id="yes" name="subscribe" value="yes" />
+              <label
+                style="margin: none; margin-left: 0px; margin-bottom: 0px"
+                for="yes"
+                >Yes</label
+              >
+            </span>
+            <div style="display: flex; flex-direction: column">
+              <input type="radio" id="no" name="subscribe" value="no" />
+              <label
+                style="margin: none; margin-left: 3px; margin-top: 2px"
+                for="no"
+                >No</label
+              >
+            </div>
+          </div>
+          <br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required=""></textarea>
+          <br />
+          <div class="file-upload">
+            <input type="file" id="file" name="file" />
+            <label for="file">Select Profile Picture</label>
+            <span id="selected-file" style="margin-left: 20px"></span>
+            <img
+              id="image-preview"
+              src=""
+              style="border-radius: 20px; display: none; margin: 0 auto"
+              alt="Selected Image Preview"
+              width="180px"
+            />
+          </div>
+          <label id="special">
+            <input type="checkbox" id="terms" name="terms" required="" />I agree
+            to the terms and conditions</label
+          >
+          <br />
+          <button type="submit" id="button">Submit</button>
+        </form>
+        <div id="answer-display"></div>
+      </div>
+
+      <!-- Color Picker -->
+      <div id="randomColorPicker" class="option">
+        <h1>Color Picker</h1>
+        <div class="color-grid">
+          <div class="color-square" data-color="#ffffff"></div>
+          <div class="color-square" data-color="#ffffff"></div>
+          <div class="color-square" data-color="#ffffff"></div>
+          <div class="color-square" data-color="#ffffff"></div>
+          <div class="color-square" data-color="#ffffff"></div>
+        </div>
+        <div class="color-values">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div style="display: flex; justify-content: space-around">
+          <button id="generate-new">Generate New Colors</button>
+        </div>
+      </div>
+
+      <!-- Guessing Game -->
+      <div id="guessingGame" class="option">
+        <div id="gameDiv">
+          <h1 id="gameBig">Press a key?? Who knows? You might win!</h1>
+          <h2 id="gameAns"></h2>
+          <div class="fancy">
+            <input type="text" id="typeMe" />
+          </div>
+        </div>
+      </div>
+
+      <!-- ToDo App -->
+      <div id="todoApp" class="option">
+        <h1>Todo App</h1>
+        <h2>Feeling overwhelmed? Get organized!</h2>
+        <input type="text" id="input-for-todoApp" />
+        <button id="add-task-btn">Enter Task</button>
+        <ul id="todo-list"></ul>
+      </div>
+
+      <!-- Simon Game -->
+      <div id="simonGame" class="option">
+        <h1>Simon Says Game</h1>
+        <h2 id="h2-for-simonGame">Press any key to start or Click Here</h2>
+        <button id="reset-btn" class="option" style="margin: 0 auto">
+          Reset Game
+        </button>
+        <div class="btn-container">
+          <div class="line-one">
+            <div class="btn green" type="button" id="green">1</div>
+            <div class="btn red" type="button" id="red">2</div>
+          </div>
+          <div class="line-two">
+            <div class="btn yellow" type="button" id="yellow">3</div>
+            <div class="btn blue" type="button" id="blue">4</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="option" id="RoundingApp">
+        <h1 id="RoundingApp_RoundToTenthsH1">Decimal Rounding App</h1>
+        <label for="decimalInput" id="RoundingApp_RoundToTenthsText">Enter a decimal number:</label>
+        <input type="number" id="decimalInput" step="any" placeholder="e.g., 3.14159"/>
+        <button onclick="roundDecimal()" id="RoundingApp_RoundToTenthsButton">Round to Tenths</button>
+        <p id="result"></p>
+      </div>
+
+      <script src="Template.js"></script>
+    </main>
+    <footer>
+      <p>© 2024 Tech Review</p>
+    </footer>
+  </body>
+</html>
