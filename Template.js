@@ -1,8 +1,16 @@
 // Function for calculating the Hypotenuse/C² when you have a and b square
-function hypotenuse(a, b) {
+function hypotenuse(a, b, result) {
   let Hypotenuse = Math.pow(a, 2) + Math.pow(b, 2);
   Hypotenuse = Math.sqrt(Hypotenuse);
-  console.log(`C² is ${Hypotenuse}, and rounded to the nearest tenth it is ${Hypotenuse.toFixed(1)}. In radical form it is √${Hypotenuse*Hypotenuse}`)
+  if (result === "radical" || result === "Radical" || result === "rad"|| result === "Rad") {
+    console.log(`In radical form it is √${Hypotenuse*Hypotenuse}.`)
+  } else if (result === "normal") {
+    console.log(`C² is ${Hypotenuse}.`)
+  } else if (result === "rounded" || result === "Round" || result === "Rounded" || result === "round") {
+    console.log(`Rounded to the nearest tenth it is ${Hypotenuse.toFixed(1)}.`)
+  } else {
+    console.log(`Rounded to the nearest tenth it is ${Hypotenuse.toFixed(1)}.`)
+  }
 }
 // Function for calculating the Other Side of a triangle/B² when you have one side and the Hypotenuse
 function otherSide(a, c) {
