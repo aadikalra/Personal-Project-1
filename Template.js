@@ -1,9 +1,10 @@
 // Function for calculating the Hypotenuse/C² when you have a and b square
 function hypotenuse(a, b, result) {
   let Hypotenuse = Math.pow(a, 2) + Math.pow(b, 2);
+  let h = Hypotenuse;
   Hypotenuse = Math.sqrt(Hypotenuse);
   if (result === "radical" || result === "Radical" || result === "rad"|| result === "Rad") {
-    console.log(`In radical form it is √${Hypotenuse*Hypotenuse}.`)
+    console.log(`In radical form it is √${h}.`)
   } else if (result === "normal") {
     console.log(`C² is ${Hypotenuse}.`)
   } else if (result === "rounded" || result === "Round" || result === "Rounded" || result === "round") {
